@@ -93,11 +93,15 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
+     else if (top > 0) {
+       return moveRock();
+     }
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
+     else if ()
   }
 
   // We should kick of the animation of the rock around here
