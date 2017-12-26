@@ -48,7 +48,7 @@ function createRock(x) {
 
 
   function moveRock() {
-     if (checkCollision() === true) {
+     if (checkCollision(rock) === true) {
        return endGame();
      } else if (top < GAME_HEIGHT) {
        top += 2;
