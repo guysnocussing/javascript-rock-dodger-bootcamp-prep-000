@@ -87,7 +87,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
    window.requestAnimationFrame(function(){
      var right = positionToInteger(DODGER.style.right);
-     if (right > 0) right -= 4;
+     if (right > 0) right += 4;
      DODGER.style.right = right + 'px';
    });
 }
