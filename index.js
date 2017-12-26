@@ -45,7 +45,7 @@ function createRock(x) {
     }
       if (top < GAME_HEIGHT) {
           top += 2;
-          rock.style.top = top + 'px';
+          rock.style.top = `${top}px`;
           window.requestAnimationFrame(moveRock);
       } else if (top === GAME_HEIGHT) {
         rock.remove();
@@ -80,7 +80,7 @@ function moveDodgerLeft() {
    window.requestAnimationFrame(function(){
      var left = positionToInteger(DODGER.style.left);
      if (left > 0) left -= 4;
-     DODGER.style.left = left + 'px';
+     DODGER.style.left = `${left}px`;
    });
 }
 
@@ -88,7 +88,7 @@ function moveDodgerRight() {
    window.requestAnimationFrame(function(){
      var right = positionToInteger(DODGER.style.left);
      if (right < GAME_WIDTH - 40) right += 4;
-     DODGER.style.left = right + 'px';
+     DODGER.style.left = `${right}px`;
    });
 }
 
