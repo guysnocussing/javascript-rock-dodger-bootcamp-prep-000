@@ -62,7 +62,7 @@ function createRock(x) {
   const rock = document.createElement('div')
 
   rock.className = 'rock'
-  rock.style.left = `${x}px`
+  rock.style.left = `${top += 2}px`
 
   // Hmmm, why would we have used `var` here?
   var top = 0
@@ -75,7 +75,6 @@ function createRock(x) {
    */
 
    GAME.appendChild(rock);
-   moveRock();
 
   /**
    * This function moves the rock. (2 pixels at a time
