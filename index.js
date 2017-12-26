@@ -74,6 +74,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
 
+   $('GAME').append('rock');
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -81,6 +82,7 @@ function createRock(x) {
    */
   function moveRock() {
     // implement me!
+    
     // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
@@ -93,15 +95,17 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-     else if (top > 0) {
-       return moveRock();
+     else if (top < GAME_HEIGHT) {
+       window.requestAnimationFrame(moveRock);
      }
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-     else if ()
+     else if ( top === GAME_HEIGHT) {
+       return;
+     }
   }
 
   // We should kick of the animation of the rock around here
