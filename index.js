@@ -129,7 +129,6 @@ function endGame() {
   for (let i = 0; i < ROCKS.length; i++) {
     ROCKS.splice(i);
   }
-  return ROCKS;
 }
 
 function moveDodger(e) {
