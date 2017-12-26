@@ -104,7 +104,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
      else if ( top === GAME_HEIGHT) {
-       return;
+       GAME.removeChild(rock);
      }
   }
 
@@ -127,7 +127,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
   GAME.removeChild(rock);
-  
+
 }
 
 function moveDodger(e) {
