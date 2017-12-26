@@ -82,7 +82,7 @@ function createRock(x) {
    */
   function moveRock() {
     // implement me!
-    rock.style.top = `${top = top + 2}px`
+    rock.style.top = `${top =+ 2}px`
     // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
@@ -98,7 +98,6 @@ function createRock(x) {
      else if (top < GAME_HEIGHT) {
        window.requestAnimationFrame(moveRock);
      }
-
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
