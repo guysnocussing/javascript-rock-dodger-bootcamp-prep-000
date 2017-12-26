@@ -67,7 +67,7 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  rock.style.top = `${top += 2}px`
+  rock.style.top = top
 
   /**
    * Now that we have a rock, we'll need to append
@@ -76,7 +76,7 @@ function createRock(x) {
 
    GAME.appendChild(rock);
    moveRock();
-
+   
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
