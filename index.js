@@ -80,7 +80,7 @@ function moveDodgerLeft() {
    */
    var left = 200;
    DODGER.style.left = left;
-   left += 4;
+   left -= 4;
    DODGER.style.left = left + 'px';
 }
 
