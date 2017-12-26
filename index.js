@@ -65,11 +65,15 @@ function endGame() {
 }
 
 function moveDodger(e) {
-   if (e.which === 37) {
-     moveDodgerLeft();
-   } else if (e.which === 39) {
-     moveDodgerRight();
+  var key = e.which || w.KeyCode;
+
+   if (key === LEFT_ARROW || key === RIGHT_ARROW) {
+     e.preventDefault();
+     e.stopPropagation();
    }
+
+   if (key === LEFT_ARROW) moveDodgerLeft();
+   if (key === RIGHT_ARROW) moveDodgerRight();
 }
 
 function moveDodgerLeft() {
