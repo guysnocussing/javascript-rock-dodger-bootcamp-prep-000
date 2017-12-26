@@ -88,7 +88,7 @@ function createRock(x) {
      */
      if (checkCollision === true) {
        return endGame();
-     } else if ()
+     }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
