@@ -126,7 +126,8 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  document.removeChild(rock);
+  var el = document.querySelectorAll('div');
+  el.removeChild(rock);
 }
 
 function moveDodger(e) {
