@@ -12,11 +12,6 @@ const START = document.getElementById('start')
 
 var gameInterval = null
 
-/**
- * Be aware of what's above this line,
- * but all of your work should happen below.
- */
-
 function checkCollision(rock) {
 
   const top = positionToInteger(rock.style.top)
@@ -27,25 +22,22 @@ function checkCollision(rock) {
     const rockLeftEdge = positionToInteger(rock.style.left)
     const rockRightEdge = rockLeftEdge + 20;
 
-    if (( rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge ) ||
-       ( rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge ) ||
-       ( rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge )) {
-         return true;
+  if ((rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
+    (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ||
+    (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)) {
+      return true;
     }
   }
 }
 
 function createRock(x) {
   const rock = document.createElement('div')
-
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
   var top = 0
-
   rock.style.top = top
   GAME.appendChild(rock);
-
 
   function moveRock() {
     if (checkCollision(rock) === true) {
@@ -86,7 +78,7 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-
+   DODGER.
 }
 
 function moveDodgerRight() {
