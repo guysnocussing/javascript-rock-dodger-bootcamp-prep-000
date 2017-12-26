@@ -55,7 +55,7 @@ function createRock(x) {
           top += 2;
           rock.style.top = top + 'px';
           window.requestAnimationFrame(moveRock);
-      } else if ( top === GAME_HEIGHT) {
+      } else if (top === GAME_HEIGHT) {
         rock.remove();
       }
   }
