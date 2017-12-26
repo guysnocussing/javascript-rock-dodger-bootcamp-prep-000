@@ -75,7 +75,6 @@ function createRock(x) {
    */
 
    GAME.appendChild(rock);
-   window.requestAnimationFrame(moveRock);
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -83,6 +82,7 @@ function createRock(x) {
    */
   function moveRock() {
     // implement me!
+    rock.style.top = `${top = top + 2}px`
     // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
@@ -109,7 +109,7 @@ function createRock(x) {
   }
 
   // We should kick of the animation of the rock around here
-  rock.style.top = `${top = top + 2}px`
+  window.requestAnimationFrame(moveRock);
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
