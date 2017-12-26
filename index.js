@@ -126,7 +126,7 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval = null;
-  
+
 }
 
 function moveDodger(e) {
