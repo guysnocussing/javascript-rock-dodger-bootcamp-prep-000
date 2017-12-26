@@ -126,7 +126,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  GAME.removeChild(rock);
+  ROCKS.length = 0;
 
 }
 
