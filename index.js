@@ -74,6 +74,7 @@ function endGame() {
   for (var i in ROCKS) {
     ROCKS[i].remove();
   }
+  alert('YOU LOSE!');
 }
 
 function moveDodger(e) {
